@@ -9,7 +9,7 @@ export const StyledButton = styled.button<{
 	cursor: pointer;
 	font-weight: 500;
 	border-radius: 6px;
-	transition: background 0.2s ease, color 0.2s ease;
+	transition: background-color 0.2s ease, color 0.2s ease;
 
 	${({ $size }) => {
 		switch ($size) {
@@ -35,19 +35,19 @@ export const StyledButton = styled.button<{
 		switch ($variant) {
 			case "secondary":
 				return css`
-					background: ${theme.colors.secondary};
-					color: ${theme.colors.onSecondary};
+					background: ${theme.colors.secondary.base};
+					color: ${theme.colors.text};
 				`;
 			case "ghost":
 				return css`
 					background: transparent;
-					color: ${theme.colors.primary};
-					border: 1px solid ${theme.colors.primary};
+					color: ${theme.colors.primary.base};
+					border: 1px solid ${theme.colors.primary.base};
 				`;
 			default:
 				return css`
-					background: ${theme.colors.primary};
-					color: ${theme.colors.onPrimary};
+					background: ${theme.colors.primary.base};
+					color: ${theme.colors.text};
 				`;
 		}
 	}}

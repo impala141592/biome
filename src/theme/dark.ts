@@ -1,11 +1,15 @@
+import { colors } from "./colors";
+
 export const darkTheme = {
 	colors: {
-		primary: "#2563eb",
-		onPrimary: "#ffffff",
-		secondary: "#9ca3af",
-		onSecondary: "#1f2937",
-		background: "#121212",
-		surface: "#1e1e1e",
-		onBackground: "#e5e7eb",
+		background: colors.night.bold,
+		surface: colors.night.faint,
+		text: colors.snow.soft,
+		primary: colors.echo,
+		secondary: colors.epic,
+		danger: colors.signal,
+		warning: colors.safety,
+		success: colors.circuit,
+		info: colors.logic,
 	},
 };
